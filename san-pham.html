@@ -16,6 +16,21 @@
 </head>
 <body>
 
+<!-- TICKER — trước topbar -->
+<div style="width:100%;overflow:hidden;background:linear-gradient(90deg,#1a3a6b 0%,#2d5aab 50%,#1a3a6b 100%);padding:10px 0;display:block;position:relative;z-index:1000;min-height:40px;">
+  <div class="ticker-track" style="display:flex;width:max-content;animation:tickerScroll 28s linear infinite;">
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-star" style="color:#ffd700;margin-right:6px;"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-truck" style="color:#ffd700;margin-right:6px;"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-shield-alt" style="color:#ffd700;margin-right:6px;"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-phone-alt" style="color:#ffd700;margin-right:6px;"></i> Hotline: 0901 279 489</span>
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-envelope" style="color:#ffd700;margin-right:6px;"></i> Email: lin298966@163.com</span>
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-star" style="color:#ffd700;margin-right:6px;"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-truck" style="color:#ffd700;margin-right:6px;"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-shield-alt" style="color:#ffd700;margin-right:6px;"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-phone-alt" style="color:#ffd700;margin-right:6px;"></i> Hotline: 0901 279 489</span>
+    <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-envelope" style="color:#ffd700;margin-right:6px;"></i> Email: lin298966@163.com</span>
+  </div>
+</div>
 <!-- THEME TOGGLE -->
 <div class="theme-toggle" id="themeToggle">
   <i class="fas fa-moon"></i>
@@ -49,6 +64,66 @@
 </nav>
 
 <!-- TICKER / MARQUEE -->
+<div class="ticker-wrap">
+  <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+    <span class="ticker-item"><i class="fas fa-star"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span class="ticker-item"><i class="fas fa-truck"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span class="ticker-item"><i class="fas fa-shield-alt"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span class="ticker-item"><i class="fas fa-phone-alt"></i> Hotline: 0901 279 489</span>
+    <span class="ticker-item"><i class="fas fa-envelope"></i> Email: lin298966@163.com</span>
+    <span class="ticker-item"><i class="fas fa-star"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span class="ticker-item"><i class="fas fa-truck"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span class="ticker-item"><i class="fas fa-shield-alt"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span class="ticker-item"><i class="fas fa-phone-alt"></i> Hotline: 0901 279 489</span>
+    <span class="ticker-item"><i class="fas fa-envelope"></i> Email: lin298966@163.com</span>
+  </marquee>
+</div>
+
+<div class="page-banner" style="background-image:url('anh-san-pham/z8016551093980_a84a85d0081c870c65dd9fb569df3ab5.jpg')">
+  <div class="page-banner-overlay"></div>
+  <div class="page-banner-content">
+    <h1>Sản Phẩm Của Chúng Tôi · 我们的产品</h1>
+    <nav class="breadcrumb"><a href="index.html">Trang chủ</a> / Sản phẩm</nav>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="container">
+    <button class="filter-btn category-filter active" data-category="all">Tất Cả · 全部</button>
+    <button class="filter-btn category-filter" data-category="nhom1">Nhóm 1 · 类别1</button>
+    <button class="filter-btn category-filter" data-category="nhom2">Nhóm 2 · 类别2</button>
+    <button class="filter-btn category-filter" data-category="nhom3">Nhóm 3 · 类别3</button>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<section class="section" style="padding-top:2rem">
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="productSearch" placeholder="Tìm kiếm sản phẩm... · 搜索产品..."/>
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS FULL GRID -->
+<section class="section">
+  <div class="container">
+    <div class="products-grid large" id="allProductsGrid">
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();prevImg()"><i class="fas fa-chevron-left"></i></button>
+  <img id="lightboxImg" src="" alt=""/>
+  <button class="lightbox-next" onclick="event.stopPropagation();nextImg()"><i class="fas fa-chevron-right"></i></button>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
 <section class="contact-strip">
   <div class="container contact-strip-inner">
     <div>
