@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JIE XING VIETNAM · Công Ty TNHH JIE XING Việt Nam</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- THEME TOGGLE -->
+<div class="theme-toggle" id="themeToggle">
+  <i class="fas fa-moon"></i>
+</div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><i class="fas fa-phone-alt"></i> 0901 279 489 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> lin298966@163.com</span>
+    <span class="lang-switch">
+      <a href="index.html" class="active">🇻🇳 Tiếng Việt</a> |
+      <a href="index-cn.html">🇨🇳 中文</a>
+    </span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-vn">JIE XING</span>
+      <span class="logo-cn">捷兴越南</span>
+    </a>
+    <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html" class="active">Trang chủ / 首页</a></li>
+      <li><a href="gioi-thieu.html">Giới thiệu / 关于我们</a></li>
+      <li><a href="san-pham.html">Sản phẩm / 产品</a></li>
+      <li><a href="video.html">Video / 视频</a></li>
+      <li><a href="lien-he.html">Liên hệ / 联系我们</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- TICKER / MARQUEE -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item"><i class="fas fa-star"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span class="ticker-item"><i class="fas fa-truck"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span class="ticker-item"><i class="fas fa-shield-alt"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span class="ticker-item"><i class="fas fa-phone-alt"></i> Hotline: 0901 279 489</span>
+    <span class="ticker-item"><i class="fas fa-envelope"></i> Email: lin298966@163.com</span>
+    <span class="ticker-item"><i class="fas fa-star"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span class="ticker-item"><i class="fas fa-truck"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span class="ticker-item"><i class="fas fa-shield-alt"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span class="ticker-item"><i class="fas fa-phone-alt"></i> Hotline: 0901 279 489</span>
+    <span class="ticker-item"><i class="fas fa-envelope"></i> Email: lin298966@163.com</span>
+  </div>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-slider" id="heroSlider">
+    <div class="hero-slide active" style="background-image:url('anh-cong-ty/z8016551817823_c7d93742f6160e219758ad115d58da5d.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('anh-cong-ty/z8016551826097_303a091d71e7a9122ea90979e0007694.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('anh-cong-ty/z8016551826808_bf2a0deb4a91d58156585b9fcf9eed31.jpg')"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">🏆 Uy tín · 品质 · Quality</div>
+    <h1 class="hero-title">
+      <span class="vn">CÔNG TY TNHH JIE XING VIỆT NAM</span>
+      <span class="cn">捷兴越南责任有限公司</span>
+    </h1>
+    <p class="hero-sub">Phát triển & Sản xuất vật liệu đặc biệt · 开发生产特殊材料</p>
+    <div class="hero-btns">
+      <a href="san-pham.html" class="btn btn-primary">Xem Sản Phẩm · 查看产品</a>
+      <a href="lien-he.html" class="btn btn-outline">Liên Hệ Ngay · 立即联系</a>
+    </div>
+  </div>
+  <div class="hero-dots" id="heroDots">
+    <span class="dot active" onclick="goSlide(0)"></span>
+    <span class="dot" onclick="goSlide(1)"></span>
+    <span class="dot" onclick="goSlide(2)"></span>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="container stats-grid">
+    <div class="stat-item">
+      <i class="fas fa-building"></i>
+      <div><strong>10+</strong><span>Năm kinh nghiệm · 年经验</span></div>
+    </div>
+    <div class="stat-item">
+      <i class="fas fa-box-open"></i>
+      <div><strong>500+</strong><span>Sản phẩm · 产品种类</span></div>
+    </div>
+    <div class="stat-item">
+      <i class="fas fa-handshake"></i>
+      <div><strong>1000+</strong><span>Đối tác · 合作伙伴</span></div>
+    </div>
+    <div class="stat-item">
+      <i class="fas fa-globe-asia"></i>
+      <div><strong>20+</strong><span>Quốc gia · 国家</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT PREVIEW -->
+<section class="section about-preview parallax" style="background-image:linear-gradient(rgba(255,255,255,0.95),rgba(255,255,255,0.95)),url('anh-cong-ty/z8016551826808_bf2a0deb4a91d58156585b9fcf9eed31.jpg')">
+  <div class="container about-grid">
+    <div class="about-images" data-aos="fade-right">
+      <img src="anh-cong-ty/z8016551826097_303a091d71e7a9122ea90979e0007694.jpg" alt="Công ty" class="about-img-main zoom-hover"/>
+      <img src="anh-cong-ty/z8016551826808_bf2a0deb4a91d58156585b9fcf9eed31.jpg" alt="Công ty" class="about-img-sub"/>
+    </div>
+    <div class="about-text" data-aos="fade-left">
+      <div class="section-label">Về Chúng Tôi · 关于我们</div>
+      <h2>JIE XING VIETNAM<br/><small>捷兴越南责任有限公司</small></h2>
+      <p>Phạm vi chính: Phát triển, sản xuất và kinh doanh các sản phẩm da, giả da, PU, PVC, da tổng hợp, siêu sợi, bảo vệ môi trường, phụ liệu giày dép, sô pha, các loại phụ liệu đặc biệt.</p>
+      <p>主要范围：开发、生产、销售PU人造皮、PU革、超纤、TPU人造皮、环保仿皮用于鞋材、干沙发革、特殊材料。</p>
+      <ul class="about-features">
+        <li><i class="fas fa-check-circle"></i> Da tổng hợp PU/PVC · PU/PVC合成革</li>
+        <li><i class="fas fa-check-circle"></i> Siêu sợi cao cấp · 高级超纤</li>
+        <li><i class="fas fa-check-circle"></i> Bảo vệ môi trường · 环保材料</li>
+        <li><i class="fas fa-check-circle"></i> Phụ liệu đặc biệt · 特殊辅料</li>
+      </ul>
+      <a href="gioi-thieu.html" class="btn btn-primary">Tìm hiểu thêm · 了解更多</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section products-preview gradient-bg" id="products" style="background:#f9f9f9">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label">Sản Phẩm Nổi Bật · 精选产品</div>
+      <h2>Sản Phẩm Của Chúng Tôi<br/><small>我们的产品</small></h2>
+    </div>
+    
+    <!-- SEARCH BOX -->
+    <div class="search-box" data-aos="fade-up">
+      <input type="text" id="productSearch" placeholder="Tìm kiếm sản phẩm... · 搜索产品..."/>
+      <i class="fas fa-search"></i>
+    </div>
+    
+    <div class="products-grid" id="featuredGrid">
+      <!-- JS sẽ render 8 ảnh đầu -->
+    </div>
+    <div class="center-btn">
+      <a href="san-pham.html" class="btn btn-primary">Xem Tất Cả · 查看全部 <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO PREVIEW -->
+<section class="section video-preview">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label">Video Sản Phẩm · 产品视频</div>
+      <h2>Xem Video Của Chúng Tôi<br/><small>观看我们的视频</small></h2>
+    </div>
+    <div class="video-grid">
+      <div class="video-card" data-aos="zoom-in">
+        <video controls poster="anh-san-pham/z8016550940335_d1de481fe2f7ef6e64ea0d3e5777d00e.jpg" data-autoplay>
+          <source src="video-san-pham/8016551160498.mp4" type="video/mp4"/>
+        </video>
+        <p>Video Sản Phẩm 1 · 产品视频 1</p>
+      </div>
+      <div class="video-card" data-aos="zoom-in" data-aos-delay="200">
+        <video controls poster="anh-san-pham/z8016550940522_28737a77425d997f7e8315f573cdece9.jpg" data-autoplay>
+          <source src="video-san-pham/8016552766700.mp4" type="video/mp4"/>
+        </video>
+        <p>Video Sản Phẩm 2 · 产品视频 2</p>
+      </div>
+    </div>
+    <div class="center-btn">
+      <a href="video.html" class="btn btn-primary">Xem Thêm Video · 查看更多视频 <i class="fas fa-play"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT STRIP -->
+<section class="contact-strip">
+  <div class="container contact-strip-inner">
+    <div>
+      <h3>Liên Hệ Với Chúng Tôi · 联系我们</h3>
+      <p>Sẵn sàng hợp tác · 随时准备合作</p>
+    </div>
+    <a href="lien-he.html" class="btn btn-white">Liên Hệ Ngay · 立即联系</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.svg" alt="JIE XING"/>
+      </a>
+      <h4>JIE XING VIETNAM · 捷兴越南</h4>
+      <p>Phát triển & SX vật liệu da đặc biệt<br/>开发生产特殊皮革材料</p>
+    </div>
+    <div class="footer-col">
+      <h4>Liên Hệ · 联系方式</h4>
+      <p><i class="fas fa-map-marker-alt"></i> 73, Ô 44-46, Đường NA 11-TĐ 2, KP Hòa Lân 2, Thuận An, Bình Dương</p>
+      <p><i class="fas fa-phone-alt"></i> 0901 279 489</p>
+      <p><i class="fas fa-envelope"></i> lin298966@163.com</p>
+    </div>
+    <div class="footer-col">
+      <h4>Trang · 页面</h4>
+      <ul>
+        <li><a href="index.html">Trang chủ · 首页</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu · 关于</a></li>
+        <li><a href="san-pham.html">Sản phẩm · 产品</a></li>
+        <li><a href="video.html">Video · 视频</a></li>
+        <li><a href="lien-he.html">Liên hệ · 联系</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kết Nối · 联系方式</h4>
+      <div class="social-links">
+        <a href="https://zalo.me/0901279489" title="Zalo" target="_blank" style="background:#0068ff;border-color:#0068ff"><span style="font-size:0.75rem;font-weight:900;letter-spacing:.5px">ZALO</span></a>
+        <a href="mailto:lin298966@163.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="lien-he-wechat.html" title="WeChat · 微信" style="background:#07c160;border-color:#07c160"><i class="fab fa-weixin"></i></a>
+        <a href="tel:0901279489" title="Điện thoại · 电话" style="background:#c0a060;border-color:#c0a060"><i class="fas fa-phone-alt"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Công Ty TNHH JIE XING Việt Nam. All rights reserved. · 版权所有</p>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" id="backTop"><i class="fas fa-arrow-up"></i></a>
+
+<script src="js/main.js"></script>
+<script src="js/advanced.js"></script>
+<script>
+  // Featured products (first 8) with scroll animation
+  const imgs = [
+    'z8016550940335_d1de481fe2f7ef6e64ea0d3e5777d00e',
+    'z8016550945421_5ee60f206d3b8f847e7f7530803e3512',
+    'z8016550962926_5897c30f955ae6f884e91117b8d88719',
+    'z8016550978244_82fe042e8ea533d2ea232a0e00a08019',
+    'z8016551016060_f0b2a675247b42a874bea145f328d885',
+    'z8016551044708_8c675a3d26f397c6abbfe12d65763cd4',
+    'z8016551093980_a84a85d0081c870c65dd9fb569df3ab5',
+    'z8016551122156_d5ec9e5bd910c740a6707cb59f9cbdee'
+  ];
+  const grid = document.getElementById('featuredGrid');
+  imgs.forEach((n,i) => {
+    grid.innerHTML += `<div class="product-card zoom-hover" data-aos="fade-up" data-aos-delay="${i*100}" data-category="category${(i%3)+1}">
+      <div class="product-img-wrap">
+        <img src="anh-san-pham/${n}.jpg" alt="Sản phẩm ${i+1}" loading="lazy" class="zoomable"/>
+        <div class="product-overlay"><a href="san-pham.html" class="btn btn-sm">Xem · 查看</a></div>
+      </div>
+      <div class="product-info">
+        <span>Sản Phẩm ${i+1} · 产品${i+1}</span>
+        <div class="share-buttons">
+          <div class="share-btn facebook" onclick="shareToSocial('facebook')" title="Share Facebook"><i class="fab fa-facebook-f"></i></div>
+          <div class="share-btn zalo" onclick="shareToSocial('zalo')" title="Share Zalo"><i class="fas fa-comment"></i></div>
+        </div>
+      </div>
+    </div>`;
+  });
+</script>
+</body>
+</html>

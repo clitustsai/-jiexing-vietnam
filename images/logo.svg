@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <!-- Background -->
+  <rect width="200" height="80" fill="transparent"/>
+  
+  <!-- JX Symbol (Stylized) -->
+  <path d="M 50 15 L 60 15 C 65 15 70 20 70 25 L 70 40 C 70 50 60 55 50 55 M 65 35 L 80 35" 
+        stroke="#e53935" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <path d="M 90 15 L 75 35 M 90 55 L 75 35" 
+        stroke="#e53935" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Text -->
+  <text x="40" y="72" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">JIE XING</text>
+  <text x="115" y="72" font-family="Arial, sans-serif" font-size="12" fill="#666">捷兴越南</text>
+</svg>

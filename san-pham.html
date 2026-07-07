@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sản Phẩm · JIE XING VIETNAM</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- THEME TOGGLE -->
+<div class="theme-toggle" id="themeToggle">
+  <i class="fas fa-moon"></i>
+</div>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><i class="fas fa-phone-alt"></i> 0901 279 489 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> lin298966@163.com</span>
+    <span class="lang-switch">
+      <a href="san-pham.html" class="active">🇻🇳 Tiếng Việt</a> |
+      <a href="index-cn.html">🇨🇳 中文</a>
+    </span>
+  </div>
+</div>
+
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-vn">JIE XING</span>
+      <span class="logo-cn">捷兴越南</span>
+    </a>
+    <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Trang chủ / 首页</a></li>
+      <li><a href="gioi-thieu.html">Giới thiệu / 关于我们</a></li>
+      <li><a href="san-pham.html" class="active">Sản phẩm / 产品</a></li>
+      <li><a href="video.html">Video / 视频</a></li>
+      <li><a href="lien-he.html">Liên hệ / 联系我们</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- TICKER / MARQUEE -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item"><i class="fas fa-star"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span class="ticker-item"><i class="fas fa-truck"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span class="ticker-item"><i class="fas fa-shield-alt"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span class="ticker-item"><i class="fas fa-phone-alt"></i> Hotline: 0901 279 489</span>
+    <span class="ticker-item"><i class="fas fa-envelope"></i> Email: lin298966@163.com</span>
+    <span class="ticker-item"><i class="fas fa-star"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span class="ticker-item"><i class="fas fa-truck"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span class="ticker-item"><i class="fas fa-shield-alt"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span class="ticker-item"><i class="fas fa-phone-alt"></i> Hotline: 0901 279 489</span>
+    <span class="ticker-item"><i class="fas fa-envelope"></i> Email: lin298966@163.com</span>
+  </div>
+</div>
+
+<div class="page-banner" style="background-image:url('anh-san-pham/z8016551093980_a84a85d0081c870c65dd9fb569df3ab5.jpg')">
+  <div class="page-banner-overlay"></div>
+  <div class="page-banner-content">
+    <h1>Sản Phẩm Của Chúng Tôi · 我们的产品</h1>
+    <nav class="breadcrumb"><a href="index.html">Trang chủ</a> / Sản phẩm</nav>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="container">
+    <button class="filter-btn category-filter active" data-category="all">Tất Cả · 全部</button>
+    <button class="filter-btn category-filter" data-category="nhom1">Nhóm 1 · 类别1</button>
+    <button class="filter-btn category-filter" data-category="nhom2">Nhóm 2 · 类别2</button>
+    <button class="filter-btn category-filter" data-category="nhom3">Nhóm 3 · 类别3</button>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<section class="section" style="padding-top:2rem">
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="productSearch" placeholder="Tìm kiếm sản phẩm... · 搜索产品..."/>
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS FULL GRID -->
+<section class="section">
+  <div class="container">
+    <div class="products-grid large" id="allProductsGrid">
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <button class="lightbox-prev" onclick="event.stopPropagation();prevImg()"><i class="fas fa-chevron-left"></i></button>
+  <img id="lightboxImg" src="" alt=""/>
+  <button class="lightbox-next" onclick="event.stopPropagation();nextImg()"><i class="fas fa-chevron-right"></i></button>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<section class="contact-strip">
+  <div class="container contact-strip-inner">
+    <div>
+      <h3>Cần Tư Vấn Sản Phẩm? · 需要产品咨询？</h3>
+      <p>Liên hệ ngay để được báo giá · 立即联系获取报价</p>
+    </div>
+    <a href="lien-he.html" class="btn btn-white">Liên Hệ · 联系</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.svg" alt="JIE XING"/>
+      </a>
+      <h4>JIE XING VIETNAM · 捷兴越南</h4>
+      <p>Phát triển & SX vật liệu da đặc biệt<br/>开发生产特殊皮革材料</p>
+    </div>
+    <div class="footer-col">
+      <h4>Liên Hệ · 联系方式</h4>
+      <p><i class="fas fa-map-marker-alt"></i> 73, Ô 44-46, Đường NA 11-TĐ 2, KP Hòa Lân 2, Thuận An, Bình Dương</p>
+      <p><i class="fas fa-phone-alt"></i> 0901 279 489</p>
+      <p><i class="fas fa-envelope"></i> lin298966@163.com</p>
+    </div>
+    <div class="footer-col">
+      <h4>Trang · 页面</h4>
+      <ul>
+        <li><a href="index.html">Trang chủ · 首页</a></li>
+        <li><a href="gioi-thieu.html">Giới thiệu · 关于</a></li>
+        <li><a href="san-pham.html">Sản phẩm · 产品</a></li>
+        <li><a href="video.html">Video · 视频</a></li>
+        <li><a href="lien-he.html">Liên hệ · 联系</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kết Nối · 联系方式</h4>
+      <div class="social-links">
+        <a href="https://zalo.me/0901279489" title="Zalo" target="_blank" style="background:#0068ff;border-color:#0068ff"><span style="font-size:0.75rem;font-weight:900;letter-spacing:.5px">ZALO</span></a>
+        <a href="mailto:lin298966@163.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="lien-he-wechat.html" title="WeChat · 微信" style="background:#07c160;border-color:#07c160"><i class="fab fa-weixin"></i></a>
+        <a href="tel:0901279489" title="Điện thoại · 电话" style="background:#c0a060;border-color:#c0a060"><i class="fas fa-phone-alt"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Công Ty TNHH JIE XING Việt Nam. All rights reserved. · 版权所有</p>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" id="backTop"><i class="fas fa-arrow-up"></i></a>
+<script src="js/main.js"></script>
+<script src="js/advanced.js"></script>
+<script>
+  const allImgs = [
+    'z8016550940335_d1de481fe2f7ef6e64ea0d3e5777d00e','z8016550940522_28737a77425d997f7e8315f573cdece9',
+    'z8016550945421_5ee60f206d3b8f847e7f7530803e3512','z8016550951342_0e5cb4407b5bd58abbbe52f11d0e7404',
+    'z8016550955261_2b2064197e16c43c8bf686e1059c77f3','z8016550962926_5897c30f955ae6f884e91117b8d88719',
+    'z8016550963130_b2a49feec5a9c10b5d2775814447cf86','z8016550964202_b74718cf075f5602aad65a42d5d1a631',
+    'z8016550972743_da92cb722dacb14ddab6c2be76c1b8ee','z8016550978244_82fe042e8ea533d2ea232a0e00a08019',
+    'z8016550978471_ba5c405c60d33c1c08b6aeb0923214e7','z8016550990674_f6fdfdfc579f6c2c913fd9049388e6ae',
+    'z8016550991748_402462b890d53692ab4f9ca341003f32','z8016550992132_c446be2f5e6a191fb48a323ae89dc462',
+    'z8016550997017_9e32af5ebd44d0d3a0a008bf5e85b2b0','z8016551005286_9a8f68e67fcc1727683076985172da9e',
+    'z8016551006411_e80b7cfd63b88a33bdeca9aec8bbc34f','z8016551016060_f0b2a675247b42a874bea145f328d885',
+    'z8016551016273_4329323a6a6aa35074da891843b8f6d8','z8016551021555_52a175e59eab7515ee32b8add2405742',
+    'z8016551030690_743bddf2c1359fe5cfa4fe4e2b943f47','z8016551031631_169b544ce2e5fc5b729dbe0a27f41572',
+    'z8016551035281_98e108d16673c15ff2e5b7c8397df4ed','z8016551041371_609989e683312781db5e4c000a0f6529',
+    'z8016551044708_8c675a3d26f397c6abbfe12d65763cd4','z8016551049797_11a22a5e34dce33ad9d32bf32919b8bb',
+    'z8016551050052_a6979e5f7cfd6a6a339bbcb260902db7','z8016551059497_3111f4f5e0b2d707cfbf368f94e8d399',
+    'z8016551064132_31e50d326e85047a65ddbf7f3275cfd6','z8016551065959_342f348149ff89410e1627594a01a060',
+    'z8016551074780_9e8cda44a65fd2dd5ffdcc539f1da57e','z8016551075527_081a84da3569bf8967e908cda67adf3f',
+    'z8016551082058_50ddc47e74d27825e09a586564c27f4c','z8016551084284_c6ea9c487d14d92dae5deee5cec48601',
+    'z8016551093980_a84a85d0081c870c65dd9fb569df3ab5','z8016551094213_249c37f9c9ab2788cb3080d6c39c7094',
+    'z8016551100451_689f1c8d47f4a1a7e6b713ac3b7c25e3','z8016551108655_aff5731fbd0faa88023041ef09605150',
+    'z8016551112366_f32cdc286cb596476dd89f61abbcaa56','z8016551113655_234eb3f2832fea8e25f66fa4c69aa1d3',
+    'z8016551122156_d5ec9e5bd910c740a6707cb59f9cbdee','z8016551122628_13b991dadba002d953d0bfe6aa2129dd',
+    'z8016551125230_baadfc8b8b92019a9ea04097988dcd67','z8016551132672_b8ec4ca8acbf4a907d76be237249c5c2',
+    'z8016551136998_ef85bffcc464e71a9ea8879da6fd7a8e','z8016551142390_cd112be71a96b2a06e2943d6126313cb',
+    'z8016551145207_df471f37cb6aa126456beb18713bf5b2','z8016551152170_ccd877c72acffdde6e0bd2c611b9a934',
+    'z8016551152409_6749b7eb433eb05f38edfb4bf5e7415c','z8016551769428_ae09d18cc9ea3dc7db08efff5dc6d216',
+    'z8016551775203_4ee25c48eb0f8e0885d47a27e858c304','z8016551780144_262b120041693b76e093baf6295cf193',
+    'z8016551783238_59b2a9c38c1dd8afc768c9dda596d52b','z8016551787426_58e5f08dad1c8c0eaaff28b25fd4655d',
+    'z8016551797027_5d2efd25418b6d2b3635b5ab6d697fa4','z8016551799377_b677feb3df4492b0ee01350b416e0716',
+    'z8016551801013_5a647b3f5b02a4f27060a0ae7f5ffcf2','z8016551801236_c002700c36fd0ec16fe977298e95358e',
+    'z8016551812801_e703aca9f1a09aaddf7d5558db4cb86f','z8016551818234_b7caba51ed98c3abd0b71a36741876ec',
+    'z8016551837269_d6d969e3b7c6cd142a2ab4524de8ca9b','z8016551846102_e265a4a6331526a0b2b9c72cadebfe35',
+    'z8016551846857_04bc3a4ffc9db4f41f24a8a97f735b0a','z8016551848384_3c8eeefa85f3f8f100bbe9e34d95a2f7',
+    'z8016551858152_89edcc87fecbf17d1fa1340d18a2bbf3','z8016551858389_1795533319a534dfe70be7882a47cfb1',
+    'z8016551867226_ea5e204cc453e5849c10425e8dd06d1b','z8016552783344_0acdb513f00748c9c54e7abd7bda360c',
+    'z8016589113249_e8ee9f4c609af0c64e0945e58bba6fc4','z8016589117978_fef9750eae763e5fbb001c887127be8f',
+    'z8016589123431_1dd9e2021835f9e6b046ff1de10981dc','z8016589129784_8585f7eee032fb6d16958a3fc41d34ee',
+    'z8016589134717_d3907ee79b9189bb4d8aeb1b6d7031a6','z8016589134939_fccfac768db89f866962fa61d63efdad'
+  ];
+
+  const groups = ['nhom1','nhom1','nhom1','nhom2','nhom2','nhom2','nhom3','nhom3','nhom3','nhom1',
+    'nhom2','nhom3','nhom1','nhom2','nhom3','nhom1','nhom2','nhom3','nhom1','nhom2',
+    'nhom3','nhom1','nhom2','nhom3','nhom1','nhom2','nhom3','nhom1','nhom2','nhom3',
+    'nhom1','nhom2','nhom3','nhom1','nhom2','nhom3','nhom1','nhom2','nhom3','nhom1',
+    'nhom2','nhom3','nhom1','nhom2','nhom3','nhom1','nhom2','nhom3','nhom1','nhom2',
+    'nhom3','nhom1','nhom2','nhom3','nhom1','nhom2','nhom3','nhom1','nhom2','nhom3',
+    'nhom1','nhom2','nhom3','nhom1','nhom2','nhom3','nhom1','nhom2','nhom3','nhom1',
+    'nhom2','nhom3','nhom1','nhom2'];
+
+  const grid = document.getElementById('allProductsGrid');
+  let currentIndex = 0;
+
+  function buildGrid(filter) {
+    grid.innerHTML = '';
+    allImgs.forEach((n, i) => {
+      if (filter === 'all' || groups[i] === filter) {
+        grid.innerHTML += `<div class="product-card zoom-hover" data-category="${groups[i]}" data-aos="fade-up">
+          <div class="product-img-wrap" onclick="openLightbox(${i})">
+            <img src="anh-san-pham/${n}.jpg" alt="Sản phẩm ${i+1}" loading="lazy" class="zoomable"/>
+            <div class="product-overlay">
+              <button class="btn btn-sm"><i class="fas fa-search-plus"></i> Xem · 查看</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span>Sản Phẩm ${i+1} · 产品${i+1}</span>
+            <a href="lien-he.html" class="product-contact"><i class="fas fa-phone"></i> Hỏi giá</a>
+          </div>
+          <div class="share-buttons" style="padding:0 1rem 1rem;justify-content:center">
+            <div class="share-btn facebook" onclick="shareToSocial('facebook')" title="Facebook"><i class="fab fa-facebook-f"></i></div>
+            <div class="share-btn zalo" onclick="shareToSocial('zalo')" title="Zalo"><i class="fas fa-comment"></i></div>
+            <div class="share-btn email" onclick="shareToSocial('email')" title="Email"><i class="fas fa-envelope"></i></div>
+          </div>
+        </div>`;
+      }
+    });
+    // Re-init scroll animation
+    if (window.initScrollAnimation) initScrollAnimation();
+  }
+
+  function filterProducts(f) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    buildGrid(f);
+  }
+
+  function openLightbox(i) {
+    currentIndex = i;
+    document.getElementById('lightboxImg').src = 'anh-san-pham/' + allImgs[i] + '.jpg';
+    document.getElementById('lightboxCaption').textContent = 'Sản Phẩm ' + (i+1) + ' · 产品' + (i+1);
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  function prevImg() {
+    currentIndex = (currentIndex - 1 + allImgs.length) % allImgs.length;
+    openLightbox(currentIndex);
+  }
+  function nextImg() {
+    currentIndex = (currentIndex + 1) % allImgs.length;
+    openLightbox(currentIndex);
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') prevImg();
+    if (e.key === 'ArrowRight') nextImg();
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  buildGrid('all');
+</script>
+</body>
+</html>
