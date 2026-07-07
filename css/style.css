@@ -1514,41 +1514,6 @@ button { border:none; cursor:pointer; font-family:inherit; }
 .share-btn.zalo { background: #0068ff; }
 .share-btn.email { background: #ea4335; }
 
-/* ==============================================
-   TESTIMONIALS CAROUSEL
-   ============================================== */
-.testimonials {
-  position: relative;
-  padding: 4rem 0;
-  overflow: hidden;
-}
-.testimonial-slide {
-  display: none;
-  text-align: center;
-  padding: 2rem;
-  animation: fadeIn 0.5s ease;
-}
-.testimonial-slide.active {
-  display: block;
-}
-.testimonial-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  border: 3px solid #c0a060;
-}
-.testimonial-text {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: #555;
-  margin: 1rem 0;
-}
-.testimonial-author {
-  font-weight: 700;
-  color: #1a3a6b;
-}
-
 /* Nút đóng menu chỉ hiển thị trên mobile */
 #menuCloseBtn {
   display: none;
