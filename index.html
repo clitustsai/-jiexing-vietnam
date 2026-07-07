@@ -265,6 +265,7 @@
     requestAnimationFrame(tick);
   })();
 </script>
+<script>
   const imgs = [
     'z8016550940335_d1de481fe2f7ef6e64ea0d3e5777d00e',
     'z8016550945421_5ee60f206d3b8f847e7f7530803e3512',
@@ -292,20 +293,5 @@
     </div>`;
   });
 </script>
-<script>
-(function(){
-  var t=document.getElementById('tickerTrack');
-  if(!t)return;
-  t.innerHTML+=t.innerHTML;
-  var pos=0,w=0;
-  function run(){
-    if(!w){w=t.scrollWidth/2;if(!w)return requestAnimationFrame(run);}
-    pos-=0.6;
-    if(pos<=-w)pos=0;
-    t.style.transform='translateX('+pos+'px)';
-    requestAnimationFrame(run);
-  }
-  requestAnimationFrame(run);
-})();
-</script></body>
+</body>
 </html>
