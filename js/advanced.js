@@ -219,23 +219,9 @@ function restartTestimonialAuto() {
 }
 
 // ==============================================
-// DARK MODE TOGGLE
+// DARK MODE - DISABLED (không dùng)
 // ==============================================
-function initDarkMode() {
-  const toggle = document.getElementById('themeToggle');
-  if (!toggle) return;
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-    toggle.innerHTML = '<i class="fas fa-sun"></i>';
-  }
-  toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    toggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
-}
+function initDarkMode() { /* disabled */ }
 
 // ==============================================
 // PRODUCT FILTER BY CATEGORY
