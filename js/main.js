@@ -16,12 +16,6 @@ window.addEventListener('scroll', () => {
 if (navToggle) {
   navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
-    // Set top of fixed menu to bottom of sticky wrapper
-    if (navMenu.classList.contains('active')) {
-      const wrapper = navbar.parentElement;
-      const rect = wrapper.getBoundingClientRect();
-      navMenu.style.top = rect.bottom + 'px';
-    }
   });
 }
 
