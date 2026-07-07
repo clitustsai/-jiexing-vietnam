@@ -1244,8 +1244,7 @@ button { border:none; cursor:pointer; font-family:inherit; }
   #menuCloseBtn:hover {
     background: #c0a060;
     border-color: #c0a060;
-  }
-  .hero { height:70vh; min-height:450px; }
+  }  .hero { height:70vh; min-height:450px; }
   .hero-title { font-size:2.2rem; }
   .hero-title .cn { font-size:1.2rem; }
   .hero-btns { flex-direction:column; width:100%; }
@@ -1695,6 +1694,11 @@ body.dark-mode .subpage-card h4,
 body.dark-mode .subpage-card p {
   color: #e0e0e0;
 }
+/* Nút đóng menu chỉ hiển thị trên mobile */
+#menuCloseBtn {
+  display: none;
+}
+
 .theme-toggle {
   position: fixed;
   bottom: 6rem;

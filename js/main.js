@@ -17,9 +17,12 @@ if (navToggle) {
   navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     const isOpen = navMenu.classList.contains('active');
-    navToggle.innerHTML = isOpen
-      ? '<i class="fas fa-times"></i>'
-      : '<i class="fas fa-bars"></i>';
+    // Chỉ đổi icon khi đang ở mobile (toggle hiển thị)
+    if (window.innerWidth <= 768) {
+      navToggle.innerHTML = isOpen
+        ? '<i class="fas fa-bars"></i>'
+        : '<i class="fas fa-bars"></i>';
+    }
   });
 
   // Đóng menu khi bấm vào link
