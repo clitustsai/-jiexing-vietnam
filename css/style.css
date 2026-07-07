@@ -59,6 +59,7 @@ button { border:none; cursor:pointer; font-family:inherit; }
   top:40px;
   z-index:998;
   transition:all 0.3s;
+  overflow:visible;
 }
 .navbar.scrolled { box-shadow:0 4px 20px rgba(0,0,0,0.15); }
 .nav-inner {
@@ -1194,6 +1195,7 @@ button { border:none; cursor:pointer; font-family:inherit; }
     max-height:0;
     overflow:hidden;
     transition:max-height 0.3s;
+    z-index:1001;
   }
   .nav-menu.active { max-height:400px; }
   .nav-menu li { margin:0.5rem 0; }
