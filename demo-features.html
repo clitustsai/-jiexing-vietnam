@@ -8,76 +8,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
+<!-- TICKER - TOP OF PAGE -->
+<div id="tickerBar" style="width:100%;overflow:hidden;background:linear-gradient(90deg,#1a3a6b,#2d5aab,#1a3a6b);padding:9px 0;display:block;">
+  <div id="tickerTrack" style="display:flex;white-space:nowrap;">
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-star" style="color:#ffd700;"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-truck" style="color:#ffd700;"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-shield-alt" style="color:#ffd700;"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-phone-alt" style="color:#ffd700;"></i> Hotline: 0901 279 489</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-envelope" style="color:#ffd700;"></i> Email: lin298966@163.com</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-star" style="color:#ffd700;"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-truck" style="color:#ffd700;"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-shield-alt" style="color:#ffd700;"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-phone-alt" style="color:#ffd700;"></i> Hotline: 0901 279 489</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-envelope" style="color:#ffd700;"></i> Email: lin298966@163.com</span>
+  </div>
+</div>
 
 <!-- THEME TOGGLE -->
 <div class="theme-toggle" id="themeToggle">
   <i class="fas fa-moon"></i>
 </div>
 
-<!-- TICKER -->
-<div class="container" style="padding:3rem 20px">
-  <h1 style="text-align:center;color:#1a3a6b;margin-bottom:3rem">
-    ✨ Demo Tính Năng Nâng Cao · 高级功能演示
-  </h1>
 
-  <!-- SCROLL ANIMATION -->
-  <section style="margin:3rem 0">
-    <h2 data-aos="fade-up">1. Scroll Animation</h2>
-    <div data-aos="fade-left" style="padding:1rem;background:#f9f9f9;margin:1rem 0">Fade từ trái</div>
-    <div data-aos="fade-right" style="padding:1rem;background:#f9f9f9;margin:1rem 0">Fade từ phải</div>
-    <div data-aos="zoom-in" style="padding:1rem;background:#f9f9f9;margin:1rem 0">Zoom in</div>
-  </section>
-
-  <!-- GLASSMORPHISM -->
-  <section style="margin:3rem 0;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);padding:3rem;border-radius:12px">
-    <div class="glass" style="padding:2rem;border-radius:12px" data-aos="fade-up">
-      <h2 style="color:#fff">2. Glassmorphism</h2>
-      <p style="color:#fff">Hiệu ứng kính mờ đẹp mắt</p>
-    </div>
-  </section>
-
-  <!-- GRADIENT BACKGROUND -->
-  <section class="gradient-bg" style="padding:3rem;border-radius:12px;margin:3rem 0" data-aos="fade-up">
-    <h2 style="color:#fff;text-align:center">3. Gradient Animation</h2>
-    <p style="color:#fff;text-align:center">Background tự động chuyển màu</p>
-  </section>
-
-  <!-- SEARCH -->
-  <section style="margin:3rem 0" data-aos="fade-up">
-    <h2>4. Instant Search</h2>
-    <div class="search-box">
-      <input type="text" id="productSearch" placeholder="Gõ để tìm kiếm..."/>
-      <i class="fas fa-search"></i>
-    </div>
-  </section>
-
-  <!-- IMAGE ZOOM -->
-  <section style="margin:3rem 0">
-    <h2 data-aos="fade-up">5. Image Zoom (Click ảnh)</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem">
-      <img src="anh-cong-ty/z8016551817823_c7d93742f6160e219758ad115d58da5d.jpg" class="zoomable zoom-hover" style="border-radius:8px;cursor:pointer" data-aos="zoom-in"/>
-      <img src="anh-cong-ty/z8016551826097_303a091d71e7a9122ea90979e0007694.jpg" class="zoomable zoom-hover" style="border-radius:8px;cursor:pointer" data-aos="zoom-in" data-aos-delay="200"/>
-      <img src="anh-cong-ty/z8016551826808_bf2a0deb4a91d58156585b9fcf9eed31.jpg" class="zoomable zoom-hover" style="border-radius:8px;cursor:pointer" data-aos="zoom-in" data-aos-delay="400"/>
-    </div>
-  </section>
-
-  <!-- SHARE BUTTONS -->
-  <section style="margin:3rem 0" data-aos="fade-up">
-    <h2>6. Social Share Buttons</h2>
-    <div class="share-buttons">
-      <div class="share-btn facebook" onclick="shareToSocial('facebook')" title="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </div>
-      <div class="share-btn twitter" onclick="shareToSocial('twitter')" title="Twitter">
-        <i class="fab fa-twitter"></i>
-      </div>
-      <div class="share-btn zalo" onclick="shareToSocial('zalo')" title="Zalo">
-        <i class="fas fa-comment"></i>
-      </div>
-      <div class="share-btn email" onclick="shareToSocial('email')" title="Email">
-        <i class="fas fa-envelope"></i>
-      </div>
-    </div>
   </section>
 
   <!-- DARK MODE INSTRUCTION -->
@@ -98,5 +50,20 @@
 
 <script src="js/main.js"></script>
 <script src="js/advanced.js"></script>
-</body>
+<script>
+(function(){
+  var t=document.getElementById('tickerTrack');
+  if(!t)return;
+  t.innerHTML+=t.innerHTML;
+  var pos=0,w=0;
+  function run(){
+    if(!w){w=t.scrollWidth/2;if(!w)return requestAnimationFrame(run);}
+    pos-=0.6;
+    if(pos<=-w)pos=0;
+    t.style.transform='translateX('+pos+'px)';
+    requestAnimationFrame(run);
+  }
+  requestAnimationFrame(run);
+})();
+</script></body>
 </html>
