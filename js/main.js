@@ -16,6 +16,18 @@ window.addEventListener('scroll', () => {
 if (navToggle) {
   navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+    const isOpen = navMenu.classList.contains('active');
+    navToggle.innerHTML = isOpen
+      ? '<i class="fas fa-times"></i>'
+      : '<i class="fas fa-bars"></i>';
+  });
+
+  // Đóng menu khi bấm vào link
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    });
   });
 }
 
