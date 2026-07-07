@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jiexing-vietnam.vercel.app/sitemap.xml
