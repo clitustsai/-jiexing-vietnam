@@ -1205,8 +1205,7 @@ button { border:none; cursor:pointer; font-family:inherit; }
     z-index:99999;
     opacity:0;
     pointer-events:none;
-  }
-  .nav-menu.active {
+  }  .nav-menu.active {
     max-height:100vh;
     opacity:1;
     pointer-events:all;
@@ -1223,6 +1222,28 @@ button { border:none; cursor:pointer; font-family:inherit; }
   .nav-menu a.active,
   .nav-menu a:hover {
     color:#c0a060 !important;
+  }
+  #menuCloseBtn {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.3);
+    color: #fff;
+    font-size: 1.6rem;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 100001;
+  }
+  #menuCloseBtn:hover {
+    background: #c0a060;
+    border-color: #c0a060;
   }
   .hero { height:70vh; min-height:450px; }
   .hero-title { font-size:2.2rem; }

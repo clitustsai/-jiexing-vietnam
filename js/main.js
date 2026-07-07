@@ -29,6 +29,19 @@ if (navToggle) {
       navToggle.innerHTML = '<i class="fas fa-bars"></i>';
     });
   });
+
+  // Thêm nút X lớn bên trong menu nếu chưa có
+  if (!document.getElementById('menuCloseBtn')) {
+    const closeBtn = document.createElement('button');
+    closeBtn.id = 'menuCloseBtn';
+    closeBtn.innerHTML = '<i class="fas fa-times"></i>';
+    closeBtn.setAttribute('aria-label', 'Đóng menu');
+    navMenu.insertBefore(closeBtn, navMenu.firstChild);
+    closeBtn.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+  }
 }
 
 // ==============================================
