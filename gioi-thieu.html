@@ -8,10 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+SC:wght@300;400;700&family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap" rel="stylesheet"/>
   <style>
-    @keyframes tickerScroll {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
+    @keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } } @-webkit-keyframes tickerScroll { 0% { -webkit-transform: translateX(0); } 100% { -webkit-transform: translateX(-50%); } }
   </style>
 </head>
 <body>
@@ -52,7 +49,7 @@
 
 <!-- TICKER -->
 <div style="width:100%;overflow:hidden;background:linear-gradient(90deg,#1a3a6b 0%,#2d5aab 50%,#1a3a6b 100%);padding:10px 0;display:block;position:relative;z-index:10;min-height:40px;">
-  <div class="ticker-track" style="display:flex;width:max-content;animation:tickerScroll 28s linear infinite;">
+  <div class="ticker-track" style="display:flex;width:max-content;min-width:200%;-webkit-animation:tickerScroll 28s linear infinite;animation:tickerScroll 28s linear infinite;">
     <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-star" style="color:#ffd700;margin-right:6px;"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
     <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-truck" style="color:#ffd700;margin-right:6px;"></i> Giao hàng toàn quốc · 全国配送</span>
     <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-shield-alt" style="color:#ffd700;margin-right:6px;"></i> Uy tín hơn 10 năm · 10年信誉</span>
@@ -64,7 +61,6 @@
     <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-phone-alt" style="color:#ffd700;margin-right:6px;"></i> Hotline: 0901 279 489</span>
     <span style="display:inline-flex;align-items:center;color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;white-space:nowrap;"><i class="fas fa-envelope" style="color:#ffd700;margin-right:6px;"></i> Email: lin298966@163.com</span>
   </div>
-</div>
 
 <!-- PAGE BANNER -->
 <div class="page-banner" style="background-image:url('anh-cong-ty/z8016551817823_c7d93742f6160e219758ad115d58da5d.jpg')">
