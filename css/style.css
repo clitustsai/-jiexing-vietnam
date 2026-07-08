@@ -1990,7 +1990,7 @@ body.cursor-ready #cursorDot { opacity: 1; }
 }
 .vn-map-svg {
   width: 100%;
-  max-width: 280px;
+  max-width: 340px;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -2004,6 +2004,16 @@ body.cursor-ready #cursorDot { opacity: 1; }
 @keyframes pinPulse {
   0%   { r: 5; opacity: 0.8; }
   100% { r: 18; opacity: 0; }
+}
+.pin-pulse-1 {
+  animation: pinPulse1 2s ease-out infinite;
+}
+.pin-pulse-2 {
+  animation: pinPulse1 2s ease-out infinite 0.7s;
+}
+@keyframes pinPulse1 {
+  0%   { r: 7;  opacity: 0.7; }
+  100% { r: 24; opacity: 0; }
 }
 .map-legend {
   display: flex;

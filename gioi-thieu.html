@@ -90,76 +90,211 @@
       <div class="chienluoc-map-wrap" data-aos="fade-right">
         <div class="map-container">
           <div class="map-label-top">CHIẾN LƯỢC PHÁT TRIỂN</div>
-          <!-- SVG Bản đồ Việt Nam đơn giản hóa -->
-          <svg viewBox="0 0 320 680" xmlns="http://www.w3.org/2000/svg" class="vn-map-svg">
+          <svg viewBox="0 0 420 820" xmlns="http://www.w3.org/2000/svg" class="vn-map-svg">
             <defs>
-              <linearGradient id="northGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#4caf50;stop-opacity:1"/>
-                <stop offset="100%" style="stop-color:#66bb6a;stop-opacity:1"/>
-              </linearGradient>
-              <linearGradient id="centralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#ff9800;stop-opacity:1"/>
-                <stop offset="100%" style="stop-color:#ffb74d;stop-opacity:1"/>
-              </linearGradient>
-              <linearGradient id="southGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#4db6ac;stop-opacity:1"/>
-                <stop offset="100%" style="stop-color:#80cbc4;stop-opacity:1"/>
-              </linearGradient>
               <filter id="mapShadow">
-                <feDropShadow dx="3" dy="3" stdDeviation="4" flood-opacity="0.2"/>
+                <feDropShadow dx="2" dy="3" stdDeviation="4" flood-opacity="0.18"/>
+              </filter>
+              <filter id="pinShadow">
+                <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.35"/>
               </filter>
             </defs>
-            <!-- Bắc Bộ -->
-            <path d="M110,20 L160,10 L210,25 L240,60 L230,100 L200,120 L190,150 L160,160 L140,145 L100,140 L75,110 L80,70 Z"
-                  fill="url(#northGrad)" stroke="#fff" stroke-width="1.5" filter="url(#mapShadow)"/>
-            <!-- Miền Trung -->
-            <path d="M140,145 L160,160 L190,150 L200,180 L195,220 L185,260 L175,300 L160,320 L145,300 L140,260 L130,220 L125,180 Z"
-                  fill="url(#centralGrad)" stroke="#fff" stroke-width="1.5" filter="url(#mapShadow)"/>
-            <!-- Miền Nam -->
-            <path d="M145,300 L160,320 L175,300 L190,330 L195,370 L180,410 L160,440 L135,450 L110,440 L90,410 L88,370 L100,340 Z"
-                  fill="url(#southGrad)" stroke="#fff" stroke-width="1.5" filter="url(#mapShadow)"/>
 
-            <!-- Cities Bắc -->
-            <circle cx="160" cy="95" r="4" fill="#c62828"/><text x="168" y="99" font-size="9" fill="#333" font-family="Arial">Hà Nội ★</text>
-            <circle cx="190" cy="55" r="3" fill="#555"/><text x="197" y="59" font-size="8" fill="#555">Cao Bằng</text>
-            <circle cx="115" cy="45" r="3" fill="#555"/><text x="70" y="49" font-size="8" fill="#555">Lào Cai</text>
-            <circle cx="215" cy="80" r="3" fill="#555"/><text x="220" y="84" font-size="8" fill="#555">Hạ Long</text>
-            <circle cx="220" cy="100" r="3" fill="#555"/><text x="225" y="104" font-size="8" fill="#555">Hải Phòng</text>
-            <circle cx="155" cy="128" r="3" fill="#555"/><text x="160" y="132" font-size="8" fill="#555">Ninh Bình</text>
+            <!-- ===================== MIỀN BẮC (xanh lá) ===================== -->
+            <path d="
+              M170,22 L185,15 L205,18 L225,14 L245,20 L262,28 L275,35 L280,50
+              L278,65 L285,75 L288,88 L282,98 L272,105 L268,118 L258,128
+              L250,138 L240,145 L228,150 L215,155 L205,160 L195,158
+              L185,162 L175,168 L165,165 L155,158 L148,148 L142,138
+              L138,125 L132,112 L128,98  L130,82  L125,68  L128,55
+              L135,44 L148,32 Z"
+              fill="#4caf50" stroke="#fff" stroke-width="1.8" filter="url(#mapShadow)"/>
 
-            <!-- Cities Miền Trung -->
-            <circle cx="155" cy="175" r="3" fill="#555"/><text x="160" y="179" font-size="8" fill="#555">Vinh</text>
-            <circle cx="158" cy="210" r="3" fill="#555"/><text x="163" y="214" font-size="8" fill="#555">Đồng Hới</text>
-            <circle cx="162" cy="245" r="3" fill="#e65100"/><text x="167" y="249" font-size="8.5" fill="#e65100" font-weight="bold">Huế</text>
-            <circle cx="168" cy="270" r="3" fill="#555"/><text x="173" y="274" font-size="8" fill="#555">Đà Nẵng</text>
-            <circle cx="170" cy="295" r="3" fill="#555"/><text x="175" y="299" font-size="8" fill="#555">Hội An</text>
+            <!-- Mũi nhọn phía tây bắc -->
+            <path d="M128,55 L110,62 L95,75 L85,90 L90,105 L105,110 L120,100 L128,88 L128,68 Z"
+              fill="#4caf50" stroke="#fff" stroke-width="1.5"/>
+            <!-- Phần duyên hải đông bắc -->
+            <path d="M278,65 L295,62 L310,70 L308,85 L295,90 L282,88 Z"
+              fill="#4caf50" stroke="#fff" stroke-width="1.5"/>
 
-            <!-- Cities Miền Nam -->
-            <circle cx="168" cy="330" r="3" fill="#555"/><text x="173" y="334" font-size="8" fill="#555">Quy Nhơn</text>
-            <circle cx="160" cy="360" r="3" fill="#555"/><text x="165" y="364" font-size="8" fill="#555">Nha Trang</text>
-            <circle cx="148" cy="390" r="3" fill="#555"/><text x="153" y="394" font-size="8" fill="#555">Phan Thiết</text>
-            <circle cx="135" cy="415" r="3" fill="#e65100"/><text x="140" y="419" font-size="8.5" fill="#e65100" font-weight="bold">Hồ Chí Minh</text>
-            <circle cx="105" cy="420" r="3" fill="#555"/><text x="68" y="424" font-size="8" fill="#555">Tây Ninh</text>
-            <circle cx="115" cy="440" r="3" fill="#555"/><text x="73" y="444" font-size="8" fill="#555">Cần Thơ</text>
+            <!-- ===================== MIỀN TRUNG (cam) ===================== -->
+            <path d="
+              M205,160 L215,155 L228,150 L238,156 L248,165 L252,178
+              L255,192 L258,208 L255,224 L252,240 L248,256 L245,272
+              L242,288 L238,304 L232,316 L225,328 L218,338 L210,345
+              L202,338 L195,325 L190,312 L187,298 L185,282 L183,266
+              L182,250 L182,234 L183,218 L185,202 L188,186 L192,172
+              L198,163 Z"
+              fill="#ff9800" stroke="#fff" stroke-width="1.8" filter="url(#mapShadow)"/>
+            <!-- Phần nhô ra biển miền trung -->
+            <path d="M248,256 L265,260 L270,272 L262,282 L248,278 Z"
+              fill="#ff9800" stroke="#fff" stroke-width="1.2"/>
+            <path d="M245,272 L260,275 L265,288 L252,292 L242,285 Z"
+              fill="#ff9800" stroke="#fff" stroke-width="1.2"/>
 
-            <!-- PIN JIE XING tại Bình Dương -->
-            <g class="map-pin-group" transform="translate(128,405)">
-              <!-- Pin shadow -->
-              <ellipse cx="0" cy="28" rx="8" ry="3" fill="rgba(0,0,0,0.25)"/>
-              <!-- Pin body -->
-              <path d="M0,-2 C-10,-2 -14,6 -14,12 C-14,22 0,30 0,30 C0,30 14,22 14,12 C14,6 10,-2 0,-2 Z"
-                    fill="#c0392b" stroke="#fff" stroke-width="1.5"/>
-              <!-- Pin inner circle -->
-              <circle cx="0" cy="12" r="5" fill="#fff"/>
-              <!-- Pulse ring -->
-              <circle cx="0" cy="12" r="5" fill="none" stroke="#c0392b" stroke-width="2" opacity="0.6" class="pin-pulse"/>
+            <!-- ===================== MIỀN NAM (xanh ngọc) ===================== -->
+            <path d="
+              M210,345 L218,338 L228,342 L238,350 L248,360 L255,374
+              L260,390 L262,408 L260,426 L255,444 L248,460 L238,474
+              L225,486 L210,494 L195,498 L180,496 L165,490 L152,480
+              L142,466 L135,450 L130,434 L128,418 L128,402 L130,386
+              L135,372 L142,360 L152,352 L165,346 L178,342 L195,342 Z"
+              fill="#4db6ac" stroke="#fff" stroke-width="1.8" filter="url(#mapShadow)"/>
+            <!-- Đồng bằng sông Cửu Long (rộng hơn về phía tây) -->
+            <path d="M165,490 L152,498 L138,505 L122,508 L108,502 L100,490
+              L102,476 L112,468 L128,465 L142,466 Z"
+              fill="#4db6ac" stroke="#fff" stroke-width="1.5"/>
+            <path d="M195,498 L188,510 L175,520 L158,525 L142,522
+              L128,515 L122,508 L138,505 L152,498 L165,490 L180,496 Z"
+              fill="#4db6ac" stroke="#fff" stroke-width="1.5"/>
+
+            <!-- ===================== CHẤM THÀNH PHỐ ===================== -->
+            <!-- Miền Bắc -->
+            <g font-family="Arial,sans-serif">
+              <!-- Lào Cai -->
+              <circle cx="118" cy="42" r="3.5" fill="#d32f2f"/>
+              <text x="94" y="40" font-size="9.5" fill="#333">Lào Cai</text>
+              <!-- Lai Châu -->
+              <circle cx="95" cy="65" r="3" fill="#555"/>
+              <text x="62" y="63" font-size="8.5" fill="#555">Lai Châu</text>
+              <!-- Điện Biên -->
+              <circle cx="88" cy="88" r="3" fill="#555"/>
+              <text x="48" y="86" font-size="8.5" fill="#555">Điện Biên</text>
+              <!-- Bắc Hà -->
+              <circle cx="195" cy="32" r="3" fill="#555"/>
+              <text x="200" y="30" font-size="8.5" fill="#555">Bắc Hà</text>
+              <!-- Cao Bằng -->
+              <circle cx="258" cy="32" r="3.5" fill="#d32f2f"/>
+              <text x="263" y="30" font-size="9.5" fill="#333">Cao Bằng</text>
+              <!-- Sapa -->
+              <circle cx="138" cy="50" r="3" fill="#555"/>
+              <text x="142" y="48" font-size="8.5" fill="#555">Sa Pa</text>
+              <!-- Yên Bái -->
+              <circle cx="168" cy="68" r="3" fill="#555"/>
+              <text x="142" y="66" font-size="8.5" fill="#555">Yên Bái</text>
+              <!-- Thái Nguyên -->
+              <circle cx="238" cy="70" r="3" fill="#555"/>
+              <text x="243" y="68" font-size="8.5" fill="#555">Thái Nguyên</text>
+              <!-- Lạng Sơn -->
+              <circle cx="268" cy="58" r="3" fill="#555"/>
+              <text x="273" y="56" font-size="8.5" fill="#555">Lạng Sơn</text>
+              <!-- Hạ Long -->
+              <circle cx="290" cy="80" r="3.5" fill="#d32f2f"/>
+              <text x="295" y="78" font-size="9.5" fill="#333">Hạ Long</text>
+              <!-- Hải Phòng -->
+              <circle cx="288" cy="95" r="3.5" fill="#d32f2f"/>
+              <text x="293" y="93" font-size="9.5" fill="#333">Hải Phòng</text>
+              <!-- Sơn La -->
+              <circle cx="132" cy="88" r="3" fill="#555"/>
+              <text x="108" y="86" font-size="8.5" fill="#555">Sơn La</text>
+              <!-- Hoà Bình -->
+              <circle cx="152" cy="105" r="3" fill="#555"/>
+              <text x="114" y="103" font-size="8.5" fill="#555">Hoà Bình</text>
+              <!-- Hà Nội ★ -->
+              <circle cx="215" cy="108" r="6" fill="#c62828"/>
+              <text x="221" y="106" font-size="11" fill="#c62828" font-weight="bold">Hà Nội ★</text>
+              <!-- Ba Bể -->
+              <circle cx="218" cy="52" r="3" fill="#555"/>
+              <text x="222" y="50" font-size="8.5" fill="#555">Ba Bể</text>
+              <!-- Mai Châu -->
+              <circle cx="148" cy="120" r="3" fill="#555"/>
+              <text x="110" y="118" font-size="8.5" fill="#555">Mai Châu</text>
+              <!-- Ninh Bình -->
+              <circle cx="200" cy="138" r="3.5" fill="#d32f2f"/>
+              <text x="205" y="136" font-size="9.5" fill="#333">Ninh Bình</text>
+
+              <!-- Miền Trung -->
+              <!-- Vinh -->
+              <circle cx="215" cy="178" r="3.5" fill="#d32f2f"/>
+              <text x="220" y="176" font-size="9.5" fill="#333">Vinh</text>
+              <!-- Đồng Hới -->
+              <circle cx="228" cy="208" r="3.5" fill="#d32f2f"/>
+              <text x="233" y="206" font-size="9.5" fill="#333">Đồng Hới</text>
+              <!-- Đông Hà -->
+              <circle cx="232" cy="232" r="3" fill="#555"/>
+              <text x="237" y="230" font-size="8.5" fill="#555">Đông Hà</text>
+              <!-- Huế -->
+              <circle cx="232" cy="252" r="5" fill="#e65100"/>
+              <text x="238" y="250" font-size="11" fill="#e65100" font-weight="bold">Huế</text>
+              <!-- Đà Nẵng -->
+              <circle cx="240" cy="272" r="3.5" fill="#d32f2f"/>
+              <text x="245" y="270" font-size="9.5" fill="#333">Đà Nẵng</text>
+              <!-- Hội An -->
+              <circle cx="248" cy="288" r="3" fill="#555"/>
+              <text x="253" y="286" font-size="8.5" fill="#555">Hội An</text>
+              <!-- Mỹ Sơn -->
+              <circle cx="228" cy="305" r="3" fill="#555"/>
+              <text x="198" y="303" font-size="8.5" fill="#555">Mỹ Sơn</text>
+
+              <!-- Miền Nam -->
+              <!-- Kon Tum -->
+              <circle cx="242" cy="330" r="3.5" fill="#d32f2f"/>
+              <text x="247" y="328" font-size="9.5" fill="#333">Kon Tum</text>
+              <!-- Pleiku -->
+              <circle cx="225" cy="352" r="3" fill="#555"/>
+              <text x="198" y="350" font-size="8.5" fill="#555">Pleiku</text>
+              <!-- Quy Nhơn -->
+              <circle cx="260" cy="350" r="3.5" fill="#d32f2f"/>
+              <text x="265" y="348" font-size="9.5" fill="#333">Quy Nhơn</text>
+              <!-- Buôn Ma Thuột -->
+              <circle cx="248" cy="382" r="3.5" fill="#d32f2f"/>
+              <text x="253" y="380" font-size="9.5" fill="#333">Buôn Ma Thuột</text>
+              <!-- Nha Trang -->
+              <circle cx="260" cy="408" r="3.5" fill="#d32f2f"/>
+              <text x="265" y="406" font-size="9.5" fill="#333">Nha Trang</text>
+              <!-- Đà Lạt -->
+              <circle cx="248" cy="430" r="3" fill="#555"/>
+              <text x="253" y="428" font-size="8.5" fill="#555">Đà Lạt</text>
+              <!-- Phan Rang -->
+              <circle cx="260" cy="450" r="3" fill="#555"/>
+              <text x="265" y="448" font-size="8.5" fill="#555">Phan Rang</text>
+              <!-- Phan Thiết -->
+              <circle cx="252" cy="468" r="3.5" fill="#d32f2f"/>
+              <text x="257" y="466" font-size="9.5" fill="#333">Phan Thiết</text>
+              <!-- Tây Ninh -->
+              <circle cx="165" cy="478" r="3" fill="#555"/>
+              <text x="130" y="476" font-size="8.5" fill="#555">Tây Ninh</text>
+              <!-- Hồ Chí Minh -->
+              <circle cx="210" cy="488" r="5" fill="#e65100"/>
+              <text x="216" y="486" font-size="11" fill="#e65100" font-weight="bold">Hồ Chí Minh</text>
+              <!-- Châu Đốc -->
+              <circle cx="140" cy="494" r="3" fill="#555"/>
+              <text x="100" y="492" font-size="8.5" fill="#555">Châu Đốc</text>
+              <!-- Mỹ Tho -->
+              <circle cx="168" cy="506" r="3" fill="#555"/>
+              <text x="142" y="504" font-size="8.5" fill="#555">Mỹ Tho</text>
+              <!-- Vũng Tàu -->
+              <circle cx="238" cy="498" r="3" fill="#555"/>
+              <text x="243" y="496" font-size="8.5" fill="#555">Vũng Tàu</text>
+              <!-- Hà Tiên -->
+              <circle cx="115" cy="508" r="3" fill="#555"/>
+              <text x="88" y="506" font-size="8.5" fill="#555">Hà Tiên</text>
+              <!-- Cần Thơ -->
+              <circle cx="155" cy="518" r="3.5" fill="#d32f2f"/>
+              <text x="130" y="516" font-size="9.5" fill="#333">Cần Thơ</text>
             </g>
 
+            <!-- ===================== PIN JIE XING tại Bình Dương ===================== -->
             <!-- Label JIE XING -->
-            <rect x="18" y="370" width="95" height="28" rx="6" fill="#1a3a6b" opacity="0.92"/>
-            <text x="65" y="379" font-size="7" fill="#ffd700" font-weight="bold" text-anchor="middle" font-family="Arial">JIE XING VIETNAM</text>
-            <text x="65" y="391" font-size="6.5" fill="#fff" text-anchor="middle" font-family="Arial">Bình Dương, VN</text>
+            <rect x="52" y="454" width="108" height="36" rx="8" fill="#1a3a6b" filter="url(#pinShadow)"/>
+            <text x="106" y="466" font-size="8" fill="#ffd700" font-weight="bold" text-anchor="middle" font-family="Arial,sans-serif" letter-spacing="0.5">JIE XING VIETNAM</text>
+            <text x="106" y="480" font-size="7.5" fill="#fff" text-anchor="middle" font-family="Arial,sans-serif">CO.,LTD · Bình Dương</text>
+            <!-- Arrow từ label đến pin -->
+            <line x1="160" y1="472" x2="195" y2="478" stroke="#1a3a6b" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.7"/>
+
+            <!-- Pin body (tại Bình Dương ~195,485) -->
+            <g filter="url(#pinShadow)" transform="translate(195,460)">
+              <ellipse cx="0" cy="36" rx="9" ry="3.5" fill="rgba(0,0,0,0.2)"/>
+              <path d="M0,0 C-13,0 -18,9 -18,17 C-18,28 0,38 0,38 C0,38 18,28 18,17 C18,9 13,0 0,0 Z"
+                    fill="#c0392b" stroke="#fff" stroke-width="2"/>
+              <circle cx="0" cy="17" r="7" fill="#fff"/>
+              <circle cx="0" cy="17" r="4" fill="#c0392b"/>
+              <!-- Pulse rings -->
+              <circle cx="0" cy="17" r="7" fill="none" stroke="#c0392b" stroke-width="2.5" class="pin-pulse-1" opacity="0"/>
+              <circle cx="0" cy="17" r="7" fill="none" stroke="#c0392b" stroke-width="2" class="pin-pulse-2" opacity="0"/>
+            </g>
           </svg>
+
           <div class="map-legend">
             <span class="legend-item north"><i></i>Miền Bắc</span>
             <span class="legend-item central"><i></i>Miền Trung</span>
