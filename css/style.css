@@ -1940,3 +1940,203 @@ body.cursor-ready #cursorDot { opacity: 1; }
   from { transform: scale(0.85); opacity: 0; }
   to   { transform: scale(1); opacity: 1; }
 }
+
+/* ==============================================
+   CHIẾN LƯỢC PHÁT TRIỂN
+   ============================================== */
+.chienluoc-section {
+  background: linear-gradient(160deg, #f8f9ff 0%, #eef2ff 50%, #f0f8f5 100%);
+  position: relative;
+  overflow: hidden;
+}
+.chienluoc-section::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(192,160,96,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.chienluoc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* MAP */
+.chienluoc-map-wrap {
+  position: sticky;
+  top: 100px;
+}
+.map-container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 40px rgba(26,58,107,0.12);
+  border: 1px solid rgba(26,58,107,0.08);
+  text-align: center;
+  position: relative;
+}
+.map-label-top {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1a3a6b;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #c0a060;
+}
+.vn-map-svg {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.map-pin-group {
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+.pin-pulse {
+  animation: pinPulse 1.8s ease-out infinite;
+}
+@keyframes pinPulse {
+  0%   { r: 5; opacity: 0.8; }
+  100% { r: 18; opacity: 0; }
+}
+.map-legend {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: #555;
+  font-weight: 500;
+}
+.legend-item i {
+  width: 14px; height: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.legend-item.north i  { background: #4caf50; }
+.legend-item.central i { background: #ff9800; }
+.legend-item.south i  { background: #4db6ac; }
+
+/* CONTENT */
+.chienluoc-intro {
+  background: linear-gradient(135deg, #1a3a6b, #2d5aab);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid #c0a060;
+}
+.chienluoc-intro p {
+  color: #fff;
+  margin: 0 0 0.5rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+.chienluoc-intro p:last-child { margin: 0; }
+
+.strategy-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.strategy-card {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.3rem 1.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  border: 1px solid rgba(26,58,107,0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.strategy-card:hover {
+  transform: translateX(6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.strategy-icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.strategy-icon i {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.strategy-body h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a3a6b;
+  margin-bottom: 0.4rem;
+}
+.strategy-body p {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Stats row */
+.strategy-stats {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+  margin-top: 1.8rem;
+  background: linear-gradient(135deg, #1a3a6b, #0f2344);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+.s-stat {
+  text-align: center;
+}
+.s-stat strong {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffd700;
+  line-height: 1.2;
+}
+.s-stat span {
+  display: block;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 1024px) {
+  .chienluoc-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .chienluoc-map-wrap {
+    position: static;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .strategy-stats {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 480px) {
+  .strategy-stats {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .strategy-card {
+    flex-direction: column;
+  }
+}
