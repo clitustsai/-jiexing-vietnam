@@ -1995,6 +1995,14 @@ body.cursor-ready #cursorDot { opacity: 1; }
   margin: 0 auto;
   display: block;
 }
+.ban-do-img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
 .map-pin-group {
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }
