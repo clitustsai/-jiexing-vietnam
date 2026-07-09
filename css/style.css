@@ -2654,3 +2654,13 @@ body.cursor-ready #cursorDot { opacity: 1; }
   margin-top: 0.3rem;
   font-family: 'Noto Sans SC', sans-serif;
 }
+
+/* cn-text helper */
+.cn-text {
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.3rem;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
