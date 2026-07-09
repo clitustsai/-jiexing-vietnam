@@ -2645,3 +2645,12 @@ body.cursor-ready #cursorDot { opacity: 1; }
 .policy-contact strong { display: block; color: #1a3a6b; margin-bottom: 0.3rem; }
 .policy-contact p { margin: 0; font-size: 0.9rem; color: #555; }
 .policy-contact a { color: #1a3a6b; font-weight: 600; }
+
+/* Chinese bilingual text helper */
+.cn-text {
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.3rem;
+  font-family: 'Noto Sans SC', sans-serif;
+}
