@@ -87,7 +87,7 @@
 <body>
 
 <!-- ===== LOADING SCREEN ===== -->
-<div id="loadingScreen">
+<div id="loadingScreen" role="status" aria-label="Đang tải trang">
   <div class="loader-inner">
     <div class="loader-logo">JIE XING</div>
     <div class="loader-bar"><div class="loader-bar-fill"></div></div>
@@ -95,12 +95,32 @@
   </div>
 </div>
 
+<!-- ===== ACCESSIBILITY SKIP LINK ===== -->
+<a href="#main-content" class="skip-link">Bỏ qua điều hướng, đến nội dung chính</a>
+
 <!-- ===== SCROLL PROGRESS BAR ===== -->
-<div id="scrollProgress"></div>
+<div id="scrollProgress" role="progressbar" aria-label="Tiến trình cuộn trang"></div>
 
 <!-- ===== CUSTOM CURSOR ===== -->
-<div id="cursor"></div>
-<div id="cursorDot"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="cursorDot" aria-hidden="true"></div>
+
+<!-- ===== COOKIE CONSENT ===== -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-label="Thông báo cookie" aria-modal="true" style="display:none">
+  <div class="cookie-inner">
+    <div class="cookie-text">
+      <i class="fas fa-cookie-bite" style="color:#c0a060;font-size:1.4rem"></i>
+      <div>
+        <strong>Chúng tôi dùng cookie kỹ thuật</strong>
+        <p>Website sử dụng cookie cần thiết để hoạt động. Không có cookie theo dõi hay quảng cáo. <a href="chinh-sach.html">Xem chính sách</a></p>
+      </div>
+    </div>
+    <div class="cookie-btns">
+      <button id="cookieAccept" class="btn btn-primary btn-sm">Đồng ý</button>
+      <button id="cookieDecline" class="btn btn-outline btn-sm">Bỏ qua</button>
+    </div>
+  </div>
+</div>
 <!-- TICKER - TOP OF PAGE -->
 <div id="tickerBar" style="width:100%;overflow:hidden;background:linear-gradient(90deg,#1a3a6b,#2d5aab,#1a3a6b);padding:9px 0;display:block;">
   <div id="tickerTrack" style="display:flex;white-space:nowrap;">
@@ -144,7 +164,7 @@
 
 
 <!-- HERO SECTION -->
-<section class="hero">
+<section class="hero" id="main-content">
   <div class="hero-overlay"></div>
   <div class="hero-slider" id="heroSlider">
     <div class="hero-slide active" style="background-image:url('anh-cong-ty/z8016551817823_c7d93742f6160e219758ad115d58da5d.jpg')"></div>
@@ -261,6 +281,87 @@
     </div>
     <div class="center-btn">
       <a href="video.html" class="btn btn-primary">Xem Thêm Video · 查看更多视频 <i class="fas fa-play"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ISO / CE / SGS BADGES -->
+<section class="section certifications-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label">Tiêu Chuẩn · 国际认证</div>
+      <h2>Chứng Nhận Quốc Tế<br/><small>国际质量认证</small></h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="cert-badge cert-iso">
+          <span class="cert-abbr">ISO</span>
+          <span class="cert-num">9001</span>
+        </div>
+        <h4>ISO 9001:2015</h4>
+        <p>Hệ thống quản lý chất lượng · 质量管理体系</p>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="cert-badge cert-ce">
+          <span class="cert-abbr">CE</span>
+        </div>
+        <h4>CE Marking</h4>
+        <p>Tiêu chuẩn an toàn châu Âu · 欧盟安全标准</p>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="cert-badge cert-sgs">
+          <span class="cert-abbr">SGS</span>
+        </div>
+        <h4>SGS Certified</h4>
+        <p>Kiểm định độc lập quốc tế · 国际独立检测</p>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="cert-badge cert-reach">
+          <span class="cert-abbr">REACH</span>
+        </div>
+        <h4>REACH Compliant</h4>
+        <p>Không hóa chất độc hại EU · 符合欧盟化学品法规</p>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="500">
+        <div class="cert-badge cert-oeko">
+          <span class="cert-abbr">OEKO</span>
+          <span class="cert-num">TEX</span>
+        </div>
+        <h4>OEKO-TEX Standard</h4>
+        <p>Vật liệu thân thiện môi trường · 环保材料认证</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER LOGO CAROUSEL -->
+<section class="section partners-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label">Đối Tác · 合作伙伴</div>
+      <h2>Khách Hàng & Đối Tác<br/><small>我们的合作伙伴</small></h2>
+    </div>
+    <div class="partners-carousel-wrap" data-aos="fade-up">
+      <div class="partners-track" id="partnersTrack">
+        <!-- Row 1 -->
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">Giày<br/>Thành Phát</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">XN Giày Da<br/>Bình Dương</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">顺德家具<br/>制造有限公司</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">Thời Trang<br/>Đức Minh</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">Bangkok Sport<br/>Footwear</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">台湾运动<br/>鞋业有限公司</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">Sofa<br/>Nội Thất Việt</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">广州皮革<br/>进出口公司</span></div></div>
+        <!-- Duplicate for loop -->
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">Giày<br/>Thành Phát</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">XN Giày Da<br/>Bình Dương</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">顺德家具<br/>制造有限公司</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">Thời Trang<br/>Đức Minh</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">Bangkok Sport<br/>Footwear</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">台湾运动<br/>鞋业有限公司</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">Sofa<br/>Nội Thất Việt</span></div></div>
+        <div class="partner-logo-item"><div class="partner-logo-box"><span class="partner-name">广州皮革<br/>进出口公司</span></div></div>
+      </div>
     </div>
   </div>
 </section>
@@ -390,6 +491,15 @@
         <li><a href="san-pham.html">Sản phẩm · 产品</a></li>
         <li><a href="video.html">Video · 视频</a></li>
         <li><a href="lien-he.html">Liên hệ · 联系</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hỗ Trợ · 支持</h4>
+      <ul>
+        <li><a href="catalogue.html"><i class="fas fa-download" style="color:#c0a060;margin-right:6px"></i>Tải Catalogue</a></li>
+        <li><a href="faq.html"><i class="fas fa-question-circle" style="color:#c0a060;margin-right:6px"></i>FAQ</a></li>
+        <li><a href="chinh-sach.html">Chính sách</a></li>
+        <li><a href="dieu-khoan.html">Điều khoản</a></li>
       </ul>
     </div>
     <div class="footer-col">

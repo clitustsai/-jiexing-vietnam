@@ -348,3 +348,40 @@ window.shareToSocial     = shareToSocial;
 window.testimonialNext   = testimonialNext;
 window.testimonialPrev   = testimonialPrev;
 window.goTestimonial     = goTestimonial;
+
+// ==============================================
+// COOKIE CONSENT
+// ==============================================
+function initCookieConsent() {
+  const banner  = document.getElementById('cookieBanner');
+  const accept  = document.getElementById('cookieAccept');
+  const decline = document.getElementById('cookieDecline');
+  if (!banner) return;
+
+  if (!localStorage.getItem('cookieConsent')) {
+    setTimeout(() => { banner.style.display = 'block'; }, 2000);
+  }
+
+  if (accept) {
+    accept.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'accepted');
+      banner.style.animation = 'none';
+      banner.style.transform = 'translateY(100%)';
+      banner.style.transition = 'transform 0.4s ease';
+      setTimeout(() => { banner.style.display = 'none'; }, 400);
+    });
+  }
+  if (decline) {
+    decline.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'declined');
+      banner.style.display = 'none';
+    });
+  }
+}
+
+// ==============================================
+// INIT (append to DOMContentLoaded)
+// ==============================================
+document.addEventListener('DOMContentLoaded', function() {
+  initCookieConsent();
+});
