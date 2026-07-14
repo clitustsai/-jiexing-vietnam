@@ -1265,6 +1265,10 @@ button { border:none; cursor:pointer; font-family:inherit; }
     position: absolute !important;
   }
   .about-grid { grid-template-columns:1fr !important; }
+  /* Class mới - ẩn ảnh desktop trên mobile */
+  .about-images-desktop { display: none !important; }
+  .about-grid-noimg,
+  .about-grid-intro { grid-template-columns: 1fr !important; }
   .video-grid, .products-grid { grid-template-columns:1fr; }
   .products-grid.large { grid-template-columns:repeat(2,1fr); }
   .contact-strip-inner { flex-direction:column; text-align:center; }
