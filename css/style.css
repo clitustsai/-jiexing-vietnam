@@ -2675,18 +2675,16 @@ video {
 /* About img sub hiện trên mobile */
 @media (max-width: 768px) {
   .about-img-sub {
-    display: block !important;
-    position: static !important;
-    width: 100% !important;
-    margin-top: 1rem;
-    border: none !important;
-    right: auto !important;
-    bottom: auto !important;
+    display: none !important;
+  }
+  .about-img-main {
+    display: none !important;
   }
   .about-images {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
+    display: none !important;
+  }
+  .about-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 
