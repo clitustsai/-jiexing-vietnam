@@ -7,10 +7,26 @@
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet"/>
+<style>@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>
 </head>
 <body>
+<!-- TICKER - TOP OF PAGE -->
+<div id="tickerBar" style="width:100%;overflow:hidden;background:linear-gradient(90deg,#1a3a6b,#2d5aab,#1a3a6b);padding:9px 0;display:block;">
+  <div id="tickerTrack" style="display:flex;white-space:nowrap;">
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-star" style="color:#ffd700;"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-truck" style="color:#ffd700;"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-shield-alt" style="color:#ffd700;"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-phone-alt" style="color:#ffd700;"></i> Hotline: 0901 279 489</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-envelope" style="color:#ffd700;"></i> Email: lin298966@163.com</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-star" style="color:#ffd700;"></i> Chất lượng đảm bảo 100% · 保证100%质量</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-truck" style="color:#ffd700;"></i> Giao hàng toàn quốc · 全国配送</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-shield-alt" style="color:#ffd700;"></i> Uy tín hơn 10 năm · 10年信誉</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-phone-alt" style="color:#ffd700;"></i> Hotline: 0901 279 489</span>
+    <span style="color:#fff;padding:0 2rem;font-size:0.85rem;font-weight:500;display:inline-flex;align-items:center;gap:6px;"><i class="fas fa-envelope" style="color:#ffd700;"></i> Email: lin298966@163.com</span>
+  </div>
+</div>
 <div class="topbar"><div class="container topbar-inner">
-  <span><i class="fas fa-phone-alt"></i> 0901 279 489 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> lin298966@163.com &nbsp;|&nbsp; <i class="fas fa-phone-alt"></i> 0961 489 181 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> jiexing0202@gmail.com</span>
+  <span><i class="fas fa-phone-alt"></i> 0901 279 489</span>
 </div></div>
 <nav class="navbar" id="navbar"><div class="container nav-inner">
   <a href="index.html" class="logo"><span class="logo-vn">JIE XING</span><span class="logo-cn">捷兴越南</span></a>
@@ -20,12 +36,13 @@
     <li><a href="san-pham.html">Sản phẩm / 产品</a></li>
     <li><a href="lien-he.html" class="active">Liên hệ / 联系我们</a></li>
   </ul>
-</div></nav>
+</div></nav></div>
 
 <div class="page-banner" style="background:linear-gradient(135deg,#07c160 0%,#05974a 100%)">
   <div class="page-banner-content">
     <h1>Liên Hệ WeChat · 微信联系</h1>
     <nav class="breadcrumb"><a href="index.html">Trang chủ</a> / <a href="lien-he.html">Liên hệ</a> / WeChat</nav>
+</div>
   </div>
 </div>
 
@@ -39,12 +56,12 @@
       <p>Quét mã QR bên dưới để thêm tài khoản WeChat của chúng tôi. Hỗ trợ khách hàng Trung Quốc và quốc tế.</p>
       <p style="color:#888">扫描下方二维码添加我们的微信账号。支持中国及国际客户。</p>
 
-      <div class="qr-box" style="border:2px solid #07c160;padding:1.2rem;width:220px;height:220px;border-radius:16px;margin:2rem auto;background:#fff;box-shadow:0 4px 20px rgba(7,193,96,.2)">
+      <div class="qr-box" style="border:2px solid #07c160;padding:1rem;width:240px;height:240px;border-radius:16px;margin:2rem auto;background:#fff;box-shadow:0 4px 20px rgba(7,193,96,.2)">
         <img
-          src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=jiexing_vietnam&color=07c160&bgcolor=ffffff"
-          alt="WeChat QR Code · 微信二维码"
-          width="180" height="180"
-          style="display:block;margin:auto;border-radius:8px"
+          src="lien-lac/qr-wechat.jpg"
+          alt="WeChat QR Code · 微信二维码 · Kim Chen"
+          width="200" height="200"
+          style="display:block;margin:auto;border-radius:8px;object-fit:contain"
         />
       </div>
 
@@ -71,11 +88,9 @@
     </div>
     <div class="footer-col">
       <h4>Liên Hệ · 联系方式</h4>
-      <p><i class="fas fa-map-marker-alt"></i> 73, Ô 44-46, Đường NA 11-TĐ 2, KP Hòa Lân 2, Thuận An, Bình Dương</p>
-      <p><i class="fas fa-phone-alt"></i> 0901 279 489 · Kim Chen</p>
-      <p><i class="fas fa-phone-alt"></i> 0961 489 181 · 范玉泉</p>
-      <p><i class="fas fa-envelope"></i> lin298966@163.com</p>
-      <p><i class="fas fa-envelope"></i> jiexing0202@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> 73, Ô 44-46, Đường NA 11-TĐ 2, KP Hòa Lân 2, Thuận An, Bình Dương<br/><span style="padding-left:1.3rem;font-size:0.82rem;color:#aaa">地址：73号，44-46栋，NA 11路，2组，和轮2街，顺交坊，顺安市，平阳省，越南</span></p>
+      <p><i class="fas fa-phone-alt"></i> 0901 279 489 · Kim Chen<br/><span style="padding-left:1.3rem;font-size:0.85rem;color:#aaa">0961 489 181 · 范玉泉</span></p>
+      <p><i class="fas fa-envelope"></i> lin298966@163.com<br/><span style="padding-left:1.3rem;font-size:0.85rem;color:#aaa">jiexing0202@gmail.com</span></p>
     </div>
     <div class="footer-col">
       <h4>Trang · 页面</h4>
@@ -85,6 +100,14 @@
         <li><a href="san-pham.html">Sản phẩm · 产品</a></li>
         <li><a href="video.html">Video · 视频</a></li>
         <li><a href="lien-he.html">Liên hệ · 联系</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hỗ Trợ · 支持</h4>
+      <ul>
+        <li><a href="faq.html"><i class="fas fa-question-circle" style="color:#c0a060;margin-right:6px"></i>FAQ · 常见问题</a></li>
+        <li><a href="chinh-sach.html">Chính sách · 政策</a></li>
+        <li><a href="dieu-khoan.html">Điều khoản · 条款</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -99,8 +122,50 @@
   </div>
   <div class="footer-bottom">
     <p>© 2025 Công Ty TNHH JIE XING Việt Nam. All rights reserved. · 版权所有</p>
+    <p style="margin-top:0.4rem;font-size:0.78rem;opacity:0.6">Designed by <a href="#" style="color:#c0a060;text-decoration:none">Clitus PC</a> · 软件开发商</p>
   </div>
 </footer>
 <script src="js/main.js"></script>
-</body>
+<script>
+  // Ticker JS animation - works on all mobile browsers
+  (function(){
+    var track = document.getElementById('tickerTrack');
+    if (!track) return;
+    var clone = track.innerHTML;
+    track.innerHTML = clone + clone;
+    track.style.animation = 'none';
+    track.style.webkitAnimation = 'none';
+    var pos = 0;
+    var speed = 0.5;
+    var totalW = 0;
+    function init() {
+      totalW = track.scrollWidth / 2;
+      requestAnimationFrame(tick);
+    }
+    function tick() {
+      pos -= speed;
+      if (pos <= -totalW) pos = 0;
+      track.style.transform = 'translateX(' + pos + 'px)';
+      track.style.webkitTransform = 'translateX(' + pos + 'px)';
+      requestAnimationFrame(tick);
+    }
+    if (document.readyState === 'complete') { setTimeout(init, 100); }
+    else { window.addEventListener('load', function(){ setTimeout(init, 100); }); }
+  })();
+</script><script>
+(function(){
+  var t=document.getElementById('tickerTrack');
+  if(!t)return;
+  t.innerHTML+=t.innerHTML;
+  var pos=0,w=0;
+  function run(){
+    if(!w){w=t.scrollWidth/2;if(!w)return requestAnimationFrame(run);}
+    pos-=0.6;
+    if(pos<=-w)pos=0;
+    t.style.transform='translateX('+pos+'px)';
+    requestAnimationFrame(run);
+  }
+  requestAnimationFrame(run);
+})();
+</script></body>
 </html>
