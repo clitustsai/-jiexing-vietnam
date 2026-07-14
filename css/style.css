@@ -2664,3 +2664,28 @@ body.cursor-ready #cursorDot { opacity: 1; }
   font-family: 'Noto Sans SC', sans-serif;
 }
 
+
+/* Fix ảnh bị xoay (EXIF orientation) */
+.product-img-wrap img,
+.video-card video,
+video {
+  image-orientation: from-image;
+}
+
+/* About img sub hiện trên mobile */
+@media (max-width: 768px) {
+  .about-img-sub {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    margin-top: 1rem;
+    border: none !important;
+    right: auto !important;
+    bottom: auto !important;
+  }
+  .about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
