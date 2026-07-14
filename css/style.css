@@ -2706,3 +2706,20 @@ video {
   height: 100%;
   object-fit: contain;
 }
+
+/* ==============================================
+   DESKTOP ONLY - ẩn trên mobile
+   ============================================== */
+@media (max-width:768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  /* Khi ảnh bị ẩn, about-grid chỉ còn 1 cột */
+  .about-grid:has(.desktop-only) {
+    grid-template-columns: 1fr;
+  }
+  /* Trang giới thiệu: grid về chúng tôi chỉ 1 cột trên mobile */
+  .about-grid-intro {
+    grid-template-columns: 1fr;
+  }
+}
