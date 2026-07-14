@@ -1252,6 +1252,8 @@ button { border:none; cursor:pointer; font-family:inherit; }
   .section-header h2 { font-size:2rem; }
   .about-text h2 { font-size:1.8rem; }
   .about-img-sub { display:none; }
+  .about-images { display:none !important; }
+  .about-grid { grid-template-columns:1fr !important; }
   .video-grid, .products-grid { grid-template-columns:1fr; }
   .products-grid.large { grid-template-columns:repeat(2,1fr); }
   .contact-strip-inner { flex-direction:column; text-align:center; }
