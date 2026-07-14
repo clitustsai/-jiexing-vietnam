@@ -2712,24 +2712,30 @@ video {
    ============================================== */
 .about-images-wrap {
   position: relative;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
 }
 .about-images-wrap .about-img-main {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  display: block;
 }
 .about-images-wrap .about-img-sub {
   position: absolute;
-  bottom: -2rem;
-  right: -2rem;
+  bottom: 0;
+  right: 0;
   width: 45%;
   border-radius: 10px;
   border: 5px solid #fff;
   box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  /* Override CSS gốc */
+  bottom: 0 !important;
+  right: 0 !important;
 }
 @media (max-width: 768px) {
   .about-images-wrap {
-    display: none;
+    display: none !important;
   }
   .about-grid {
     grid-template-columns: 1fr !important;
