@@ -552,10 +552,13 @@
     'z8016551122156_d5ec9e5bd910c740a6707cb59f9cbdee'
   ];
   const grid = document.getElementById('featuredGrid');
+  // Index cần xoay 90 độ do EXIF: index 5 (SP6)
+  const rotateIdx = [5];
   imgs.forEach((n,i) => {
+    const needRotate = rotateIdx.includes(i);
     grid.innerHTML += `<div class="product-card zoom-hover" data-aos="fade-up" data-aos-delay="${i*100}" data-category="category${(i%3)+1}">
       <div class="product-img-wrap">
-        <img src="anh-san-pham/${n}.jpg" alt="Sản phẩm ${i+1}" loading="lazy" class="zoomable"/>
+        <img src="anh-san-pham/${n}.jpg" alt="Sản phẩm ${i+1}" loading="lazy" class="zoomable" style="${needRotate ? 'transform:rotate(90deg);transform-origin:center;' : ''}"/>
         <div class="product-overlay"><a href="san-pham.html" class="btn btn-sm">Xem · 查看</a></div>
       </div>
       <div class="product-info">
