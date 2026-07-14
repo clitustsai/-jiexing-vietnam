@@ -297,11 +297,14 @@
 
   function buildGrid(filter) {
     grid.innerHTML = '';
+    // Ảnh cần xoay do EXIF (index bắt đầu từ 0): SP25=24, SP37=36
+    const rotateIdx = [24, 36];
     allImgs.forEach((n, i) => {
       if (filter === 'all' || groups[i] === filter) {
+        const needRotate = rotateIdx.includes(i);
         grid.innerHTML += `<div class="product-card zoom-hover" data-category="${groups[i]}" data-aos="fade-up">
           <div class="product-img-wrap" onclick="openLightbox(${i})">
-            <img src="anh-san-pham/${n}.jpg" alt="Sản phẩm ${i+1}" loading="lazy" class="zoomable"/>
+            <img src="anh-san-pham/${n}.jpg" alt="Sản phẩm ${i+1}" loading="lazy" class="zoomable" style="${needRotate ? 'transform:rotate(90deg);transform-origin:center;' : ''}"/>
             <div class="product-overlay">
               <button class="btn btn-sm"><i class="fas fa-search-plus"></i> Xem · 查看</button>
             </div>
@@ -318,7 +321,6 @@
         </div>`;
       }
     });
-    // Re-init scroll animation
     if (window.initScrollAnimation) initScrollAnimation();
   }
 
