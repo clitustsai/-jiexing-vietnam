@@ -2689,3 +2689,22 @@ video {
     gap: 0.8rem;
   }
 }
+
+/* Video quay dọc (portrait) - hiển thị đúng */
+.video-portrait {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #000;
+  aspect-ratio: 9/16;
+}
+.video-portrait video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
